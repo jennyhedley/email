@@ -30,7 +30,7 @@ a {
 var t=0;
 var n=0;
 var paths=0;
-var opening='I finally caught up on some sleep and can tell you about the circus, I ran out of happy pills so have to go to the pharmacy today,I will try to write but the letter from N just made me so angry because she was guilt tripping me to return'.split(',');
+var opening='This is this, That is that'.split(',');
 var missy1='MissyOne1, MissyOne2'.split(',');
 var missy2='MissyTwo1, MissyTwo2'.split(',');
 var g1='GOne1, GOne2'.split(',');
@@ -51,8 +51,9 @@ function path() {
  } else {
   words
  }
- words+=' t '+choose(missy1)+'.';
+ words+='. '+choose(missy1)+'.';
  return words;
+                            
 }
 function site() {
  var words='';
@@ -61,9 +62,10 @@ function site() {
  } else {
   words+=choose(missy1);
  }
- words+='x '+choose(g2)+'.';
+ words+='. '+choose(g2)+'.';
  return words;
 }
+                      
 function cave() {
  var adjs=('chanting,'+choose(texture)+',yellow,green,blue').split(',');
  var target=1+rand_range(3);
